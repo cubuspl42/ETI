@@ -30,8 +30,8 @@ Ogólne zasady:
 
 Środowisko:
 -----------
-- Maszyna wirtualna: VirtualBox version ? (zainstalować+skonfigurować w domu)
-- OS: Linux DebMini:
+- Maszyna wirtualna VirtualBox 4.2.8 (zainstalować+skonfigurować w domu)
+- OS: Linux DebMini
 - Apache
     - HTML+CSS+JS (Etap 1)
     - PHP+MySQL (Etap 2)
