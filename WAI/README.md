@@ -3,7 +3,8 @@ Wytwarzanie Aplikacji Internetowych
 
 Strona przedmiotu:
 ------------------
-- http://galaxy.eti.pg.gda.pl/katedry/kask/dydaktyka/Wytwarzanie_Aplikacji_Internetowych/
+- Strona główna: http://galaxy.eti.pg.gda.pl/katedry/kask/dydaktyka/Wytwarzanie_Aplikacji_Internetowych/
+- Terminy: http://galaxy.eti.pg.gda.pl/katedry/kask/dydaktyka/Wytwarzanie_Aplikacji_Internetowych//2014/2014_terminyWAI.pdf
 
 Prowadzący:
 -----------
@@ -16,22 +17,25 @@ Aby zdać:
 - Projekt: min. 20/50 pkt
 - Wykład (egzamin): min. 20/50 pkt
 - Łącznie: min. 51/100 pkt
-
-Projekt:
---------
-- Etap 1 (HTML + CSS): 10 pkt **-2 pkt za tydzień spóźnienia**
-- Etap 2 (PHP [Obiektowo]): 40 pkt (Styczeń) **-8 pkt za tydzień spóźnienia**
-
-Ogólne zasady:
---------------
-- HTML 4/5, CSS 2/3 (mają się validować)
-- Układ nie ma opierać się na tabelkach!
-- Ma być 1 formularz ("action")
+- Zasady zaliczenia przedmiotu: http://galaxy.eti.pg.gda.pl/katedry/kask/dydaktyka/Wytwarzanie_Aplikacji_Internetowych//2014/2014_WAI_zal_przedmiotu.pdf
 
 Środowisko:
 -----------
-- Maszyna wirtualna VirtualBox 4.2.8 (zainstalować+skonfigurować w domu)
-- OS: Linux DebMini
+- Maszyna wirtualna VirtualBox 4.2.8
+- Linux DebMini
 - Apache
-    - HTML+CSS+JS (Etap 1)
-    - PHP+MySQL (Etap 2)
+- Konfiguracja: http://galaxy.eti.pg.gda.pl/katedry/kask/dydaktyka/Wytwarzanie_Aplikacji_Internetowych/2013/2013WAI_konfiguracja_srodowiska_v3.pdf
+
+Projekt (Etap 1.)
+-----------------
+- Zdawanie: Listopad 2014
+- Technologia: HTML 4/5 + CSS 2/3
+- Temat: Moje hobby (?)
+- Punktów do uzyskania: 10 (**-2 pkt za każdy tydzień spóźnienia**)
+- Wytyczne: http://galaxy.eti.pg.gda.pl/katedry/kask/dydaktyka/Wytwarzanie_Aplikacji_Internetowych//2013/2013_WAI_E1_wytyczne.pdf
+
+Projekt (Etap 2.)
+-----------------
+- Zdawanie: Styczeń 2015
+- Technologia: PHP (Obiektowo)
+- Punktów do uzyskania: 40 (**-8 pkt za każdy tydzień spóźnienia**)
