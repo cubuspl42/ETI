@@ -25,6 +25,7 @@ Aby zdać:
 - Linux DebMini
 - Apache
 - Konfiguracja: http://galaxy.eti.pg.gda.pl/katedry/kask/dydaktyka/Wytwarzanie_Aplikacji_Internetowych/2013/2013WAI_konfiguracja_srodowiska_v3.pdf
+- Skrypt, który robi wszystko (Michał Tomczak): https://dl.dropboxusercontent.com/u/102383064/zrobwszystko.tar
 
 Projekt (Etap 1.)
 -----------------
