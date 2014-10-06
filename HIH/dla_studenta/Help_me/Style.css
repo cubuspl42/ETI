@@ -1,0 +1,134 @@
+﻿body
+{
+}
+h6 /*Pierwsza linijka nagłówka*/
+{
+    /*Krój czcionki*/
+    /*styl, wielkość i kolor*/
+    text-align:center;
+    line-height:0px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+h6.small /*pomniejszone kolejne trzy linijki nagłówka*/
+{
+    font-size:16px;
+}
+h6.aqua /*zmiana koloru w drugiej linijce nagłówka*/
+{
+    /*kolor aqua*/
+    font-size:16px;
+}
+h1 /*napis na dole nagłówka "OPTICAL COHERENCE TOMOGRAPHY"*/
+{
+   /*krój czcionki, wielkość, styl, pogrubienie,...*/
+    text-transform:uppercase;
+    /*WYRÓWNANIE DO LEWEJ*/
+}
+h2 /*menu strony*/
+{
+    font-family:Times New Roman;
+    font-weight:bold;
+    font-style:normal;
+    color:blue;
+    font-size:18px;
+    text-transform:capitalize;
+    text-align:left;
+}
+h2.sekcja
+{
+    color:Green;
+    text-align:center;
+    font-style:italic;
+    text-decoration:underline;
+}
+p /*tekst w dokumencie*/
+{
+    /*krój czcionki, kolor, wielkość, ...*/
+    text-align:justify;
+}
+
+#dokument /*opis struktury dokumentu - wielkość, marginesy, obramowanie*/
+{
+    width: 960px;
+    height:850px;
+    margin:10px auto;
+    border: 1px solid black;
+}
+
+/*Opisy elementów dokumentu tj. nagłówek, kolumna lewa(menu z odsyłaczami), kolumna prawa ( treść dokumentu)*/
+#naglowek 
+{
+    width:950px;
+    height:150px;
+    border-bottom:1px solid black;
+    position:relative;
+   
+
+}
+
+#kol_lewa
+{
+    
+    position:relative;
+    /*top: 150px;*/
+    float:left;
+    width:200px;
+    height:auto;
+    background-color:gold;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+
+}
+
+#kol_prawa
+{
+    position: relative;
+    /*top: 150px;*/
+    float:right;
+    width:750px;
+    height:auto;
+    overflow:auto;
+     
+}
+/*****************************************************************************************************/
+.podpis /*firmatowanie klasy podpis lub stylu do podpisów pod rysunkami*/
+{
+   font-family:Times New Roman;
+   color:red;
+   font-size:12px;
+}
+
+table /* formatowanie tabeli*/
+{
+	/*obramowanie tabeli: linia ciągła, kolor czarny, grubość 1px */
+	border-collapse:collapse;
+	text-align:center;
+}
+
+td
+{
+	border: 1px solid black;
+}
+th.row
+{
+	/* uzupełnij zgodnie z dokumentem źródłowym*/
+}
+th.col
+{
+   /*uzupełnij zgodnie z dokumentem źródłowym*/
+}
+form /* formatowane formularza */
+{
+    font-family:Times New Roman;
+    font-size:16px;
+    color:maroon;
+}
+
+    
+    
+    
+    
+    
+
+    

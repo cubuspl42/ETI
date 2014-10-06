@@ -1,0 +1,74 @@
+﻿/*Opis poszczególnych akapitów dolumentu*/
+body 
+{
+	background-color: white;
+	color: blue;
+}
+h1
+{
+	font-style:normal;
+	text-align:center;
+}
+h2
+{
+	text-align:center;
+	font-style:italic;
+	color:Blue;
+}
+h3
+{
+	text-align:center;
+	font-family:Verdana "Times New Roman";
+	color: Green;
+}
+p
+{
+	font-size:larger;
+	color:Black;
+}
+p.przyklady
+{
+	text-align:center;
+	border-style:solid;
+	border-color:Red;
+}
+/*opis stylu tabeli*/
+table
+{
+	border: 1px solid black;
+	border-collapse:collapse;
+	text-align:center;
+}
+td
+{
+	border: 1px solid black;
+}
+th
+{
+	border: 1px solid black;
+}
+
+/* Opis układu dwóch kolumn */
+#pojemnik
+{
+	width: 950px;
+	height:auto;
+	margin: 10 auto;
+	overflow: auto;
+	
+}
+#kol_lewa
+{
+	float: left;
+	width:200px;
+	position:fixed;
+}
+#kol_prawa
+{
+    
+	float:right;
+	width:750px;
+	height: auto;
+	border-left: 2px solid black;
+	overflow:auto;
+}
