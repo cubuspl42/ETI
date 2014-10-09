@@ -7,7 +7,6 @@ using namespace std;
 int main() {
     double a, b, c;
     cin >> a >> b >> c;
-    double delta = b*b-4*a*c;
     if(a == 0) {
         // bx + c = 0
         if(b == 0) {
@@ -22,6 +21,7 @@ int main() {
             cout << "x = " << -c/b << endl;
         }
     } else {
+        double delta = b*b-4*a*c;
         // ax^2 + bx + c = 0
         if(delta < 0) {
             cout << "delta < 0 brak rozwiązań" << endl;
