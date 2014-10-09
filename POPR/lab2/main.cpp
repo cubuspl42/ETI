@@ -1,4 +1,3 @@
-#include <cstdio>
 #include <cfloat>
 #include <iostream>
 #include <cmath>
