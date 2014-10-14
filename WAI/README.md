@@ -34,7 +34,7 @@ Projekt (Etap 1.)
 - Technologia: HTML 4/5 + CSS 2/3
 - Temat: Moje hobby (?)
 - Punktów do uzyskania: 10 (**-2 pkt za każdy tydzień spóźnienia**)
-- Wytyczne: http://galaxy.eti.pg.gda.pl/katedry/kask/dydaktyka/Wytwarzanie_Aplikacji_Internetowych//2013/2013_WAI_E1_wytyczne.pdf
+- Wytyczne (tegoroczne!): http://galaxy.eti.pg.gda.pl/katedry/kask/dydaktyka/Wytwarzanie_Aplikacji_Internetowych//2014/2014_WAI_E1_wytyczne.pdf
 
 Projekt (Etap 2.)
 -----------------
