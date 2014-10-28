@@ -1,24 +1,17 @@
-#define _USE_MATH_DEFINES
-#include<math.h>
-#include<stdio.h>
-#include<string.h>
+// -*- coding: utf-8 -*-
+#define _USE_MATH_DEFINES // MSVC <3
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
 
-extern "C" {
-//#ifdef BIT64
-//#include"./sdl64/include/SDL.h"
-//#include"./sdl64/include/SDL_main.h"
-//#else
-#include"./sdl/include/SDL.h"
-#include"./sdl/include/SDL_main.h"
-//#endif
-}
+#include <SDL.h>
+#include <SDL_main.h>
 
 #define SCREEN_WIDTH	640
 #define SCREEN_HEIGHT	480
 
-
-// narysowanie napisu txt na powierzchni screen, zaczynajπc od punktu (x, y)
-// charset to bitmapa 128x128 zawierajπca znaki
+// narysowanie napisu txt na powierzchni screen, zaczynajƒÖc od punktu (x, y)
+// charset to bitmapa 128x128 zawierajƒÖca znaki
 void DrawString(SDL_Surface *screen, int x, int y, const char *text,
                 SDL_Surface *charset) {
 	int px, py, c;
@@ -38,12 +31,12 @@ void DrawString(SDL_Surface *screen, int x, int y, const char *text,
 		SDL_BlitSurface(charset, &s, screen, &d);
 		x += 8;
 		text++;
-		};
-	};
+    }
+}
 
 
 // narysowanie na ekranie screen powierzchni sprite w punkcie (x, y)
-// (x, y) to punkt úrodka obrazka sprite na ekranie
+// (x, y) to punkt ≈õrodka obrazka sprite na ekranie
 void DrawSurface(SDL_Surface *screen, SDL_Surface *sprite, int x, int y) {
 	SDL_Rect dest;
 	dest.x = x - sprite->w / 2;
@@ -51,7 +44,7 @@ void DrawSurface(SDL_Surface *screen, SDL_Surface *sprite, int x, int y) {
 	dest.w = sprite->w;
 	dest.h = sprite->h;
 	SDL_BlitSurface(sprite, NULL, screen, &dest);
-	};
+}
 
 
 // rysowanie pojedynczego pixela
@@ -59,37 +52,31 @@ void DrawPixel(SDL_Surface *surface, int x, int y, Uint32 color) {
 	int bpp = surface->format->BytesPerPixel;
 	Uint8 *p = (Uint8 *)surface->pixels + y * surface->pitch + x * bpp;
 	*(Uint32 *)p = color;
-	};
+}
 
 
-// rysowanie linii o d≥ugoúci l w pionie (gdy dx = 0, dy = 1) 
-// bπdü poziomie (gdy dx = 1, dy = 0)
+// rysowanie linii o d≈Çugo≈õci l w pionie (gdy dx = 0, dy = 1) 
+// bƒÖd≈∫ poziomie (gdy dx = 1, dy = 0)
 void DrawLine(SDL_Surface *screen, int x, int y, int l, int dx, int dy, Uint32 color) {
 	for(int i = 0; i < l; i++) {
 		DrawPixel(screen, x, y, color);
 		x += dx;
 		y += dy;
-		};
-	};
+    }
+}
 
 
-// rysowanie prostokπta o d≥ugoúci bokÛw l i k
+// rysowanie prostokƒÖta o d≈Çugo≈õci bok√≥w l i k
 void DrawRectangle(SDL_Surface *screen, int x, int y, int l, int k,
                    Uint32 outlineColor, Uint32 fillColor) {
-	int i, j;
 	DrawLine(screen, x, y, k, 0, 1, outlineColor);
 	DrawLine(screen, x + l - 1, y, k, 0, 1, outlineColor);
 	DrawLine(screen, x, y, l, 1, 0, outlineColor);
 	DrawLine(screen, x, y + k - 1, l, 1, 0, outlineColor);
-	for(i = y + 1; i < y + k - 1; i++)
+	for(int i = y + 1; i < y + k - 1; i++)
 		DrawLine(screen, x + 1, i, l - 2, 1, 0, fillColor);
-	};
+}
 
-
-// main
-#ifdef __cplusplus
-extern "C"
-#endif
 int main(int argc, char **argv) {
 	int t1, t2, quit, frames, rc;
 	double delta, worldTime, fpsTimer, fps, distance, etiSpeed;
@@ -103,9 +90,9 @@ int main(int argc, char **argv) {
 	if(SDL_Init(SDL_INIT_TIMER|SDL_INIT_VIDEO) != 0) {
 		printf("SDL_Init error: %s\n", SDL_GetError());
 		return 1;
-		}
+    }
 
-	// tryb pe≥noekranowy
+//  tryb pe≈Çnoekranowy
 //	rc = SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP,
 //	                                 &window, &renderer);
 	rc = SDL_CreateWindowAndRenderer(SCREEN_WIDTH, SCREEN_HEIGHT, 0,
@@ -114,7 +101,7 @@ int main(int argc, char **argv) {
 		SDL_Quit();
 		printf("SDL_CreateWindowAndRenderer error: %s\n", SDL_GetError());
 		return 1;
-		};
+    }
 	
 	SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");
 	SDL_RenderSetLogicalSize(renderer, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -131,7 +118,7 @@ int main(int argc, char **argv) {
 	                           SCREEN_WIDTH, SCREEN_HEIGHT);
 
 
-	// wy≥πczenie widocznoúci kursora myszy
+	// wy≈ÇƒÖczenie widoczno≈õci kursora myszy
 	SDL_ShowCursor(SDL_DISABLE);
 
 	// wczytanie obrazka cs8x8.bmp
@@ -144,7 +131,7 @@ int main(int argc, char **argv) {
 		SDL_DestroyRenderer(renderer);
 		SDL_Quit();
 		return 1;
-		};
+    }
 	SDL_SetColorKey(charset, true, 0x000000);
 
 	eti = SDL_LoadBMP("./eti.bmp");
@@ -157,11 +144,11 @@ int main(int argc, char **argv) {
 		SDL_DestroyRenderer(renderer);
 		SDL_Quit();
 		return 1;
-		};
+    }
 
 	char text[128];
 	int czarny = SDL_MapRGB(screen->format, 0x00, 0x00, 0x00);
-	int zielony = SDL_MapRGB(screen->format, 0x00, 0xFF, 0x00);
+//	int zielony = SDL_MapRGB(screen->format, 0x00, 0xFF, 0x00);
 	int czerwony = SDL_MapRGB(screen->format, 0xFF, 0x00, 0x00);
 	int niebieski = SDL_MapRGB(screen->format, 0x11, 0x11, 0xCC);
 
@@ -179,7 +166,7 @@ int main(int argc, char **argv) {
 		t2 = SDL_GetTicks();
 
 		// w tym momencie t2-t1 to czas w milisekundach,
-		// jaki uplyna≥ od ostatniego narysowania ekranu
+		// jaki uplyna≈Ç od ostatniego narysowania ekranu
 		// delta to ten sam czas w sekundach
 		delta = (t2 - t1) * 0.001;
 		t1 = t2;
@@ -205,13 +192,13 @@ int main(int argc, char **argv) {
 			fps = frames * 2;
 			frames = 0;
 			fpsTimer -= 0.5;
-			};
+        };
 
 		// tekst informacyjny
 		DrawRectangle(screen, 4, 4, SCREEN_WIDTH - 8, 36, czerwony, niebieski);
 		sprintf(text, "Szablon drugiego zadania, czas trwania = %.1lf s  %.0lf klatek / s", worldTime, fps);
 		DrawString(screen, screen->w / 2 - strlen(text) * 8 / 2, 10, text, charset);
-		sprintf(text, "Esc - wyjscie, \030 - przyspieszenie, \031 - zwolnienie", worldTime);
+		sprintf(text, "Esc - wyjscie, \030 - przyspieszenie, \031 - zwolnienie");
 		DrawString(screen, screen->w / 2 - strlen(text) * 8 / 2, 26, text, charset);
 
 		SDL_UpdateTexture(scrtex, NULL, screen->pixels, screen->pitch);
@@ -219,7 +206,7 @@ int main(int argc, char **argv) {
 		SDL_RenderCopy(renderer, scrtex, NULL, NULL);
 		SDL_RenderPresent(renderer);
 
-		// obs≥uga zdarzeÒ (o ile jakieú zasz≥y)
+		// obs≈Çuga zdarze≈Ñ (o ile jakie≈õ zasz≈Çy)
 		while(SDL_PollEvent(&event)) {
 			switch(event.type) {
 				case SDL_KEYDOWN:
