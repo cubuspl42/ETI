@@ -179,7 +179,7 @@ int main(int argc, char **argv) {
 
 		DrawSurface(screen, eti,
 		            SCREEN_WIDTH / 2 + sin(distance) * SCREEN_HEIGHT / 3,
-			    SCREEN_HEIGHT / 2 + cos(distance) * SCREEN_HEIGHT / 3);
+			    	SCREEN_HEIGHT / 2 + cos(distance) * SCREEN_HEIGHT / 3);
 
 
 //		DrawScreen(screen, plane, ship, charset, worldTime, delta, vertSpeed);
@@ -192,7 +192,7 @@ int main(int argc, char **argv) {
 			fps = frames * 2;
 			frames = 0;
 			fpsTimer -= 0.5;
-        };
+        }
 
 		// tekst informacyjny
 		DrawRectangle(screen, 4, 4, SCREEN_WIDTH - 8, 36, czerwony, niebieski);
@@ -220,10 +220,10 @@ int main(int argc, char **argv) {
 				case SDL_QUIT:
 					quit = 1;
 					break;
-				};
-			};
+			}
+		}
 		frames++;
-		};
+	}
 
 	// zwolnienie powierzchni
 	SDL_FreeSurface(charset);
@@ -234,4 +234,4 @@ int main(int argc, char **argv) {
 
 	SDL_Quit();
 	return 0;
-	};
+}
