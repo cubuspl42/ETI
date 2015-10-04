@@ -23,7 +23,7 @@ rodzin oraz wysyokości kolejnych wypłat miesięcznych.
 
 #### Zlecający
 
-Zleceniodawcą projektu jest dziekan Wydziału ETI Politechniki Gdańskiej
+Zleceniodawcą projektu jest dziekan Wydziału ETI Politechniki Gdańskiej.
 
 #### Przedmiot zlecenia
 
@@ -32,15 +32,19 @@ Przedmiotem zlecenia jest usprawnienie działania Wydziałowej Komisji Stypendia
 #### Główne scenariusze
 
 1. Studenci składają wnioski o stypendium socjalne
-1.1. Wnioski są przyjmowane, gdy dochód rodzinny jest mniejszy lub równy od ustalonego progu i odrzucane w przeciwnym wypadku.
+    1. Wnioski są przyjmowane, gdy dochód rodzinny jest mniejszy lub równy od ustalonego progu i odrzucane w przeciwnym wypadku.
 
 2. Comiesięczna wypłata stypendiów
-2.1. Wyznaczenie kwoty stypendium dla danego studenta w danym miesiącu
-2.1.1. Na podstawie przychodu netto na miesiąc na osobę (p), progu (P), minimalnej wartości stypendium (m) oraz maksymalnej wartości stypendium (M) określa się kwotę stypendium (K) dla danego studenta w danym miesiącu następującym wzorem: K = m + (p/P)(M - m)
-2.2. Przekazanie pieniędzy
-2.2.1. Jeśli student posiada rachunek bankowy i przekazał go we wniosku, stypendium przesyłane jest przelewem elektronicznym.
-2.2.2. W przeciwnym przypadku, student musi odebrać stypendium osobiście.
+    1. Wyznaczenie kwoty stypendium dla danego studenta w danym miesiącu
+        1. Na podstawie przychodu netto na miesiąc na osobę (p), progu (P), minimalnej wartości stypendium (m) oraz maksymalnej wartości stypendium (M) określa się kwotę stypendium (K) dla danego studenta w danym miesiącu następującym wzorem: K = m + (p/P)(M - m)
+    2. Przekazanie pieniędzy
+        1. Jeśli student posiada rachunek bankowy i podał jego numer we wniosku, stypendium przesyłane jest przelewem elektronicznym.
+        2. W przeciwnym przypadku, student musi odebrać stypendium osobiście.
 
 3. Zmiana okoliczności mających wpływ na przyznane prawo do stypendium socjalnego
-3.1. Studenci mają prawo składać oświadczenie o zmianie okoliczności mających wpływ na przyznane prawo do stypendium socjalnego.
-3.1.1. Oznacza to, że wartość przychodu netto na miesiąc na osobę może się zmieniać w czasie i należy to uwzględnić w algorytmie obliczania kwoty wypłaty. (patrz 2.1.1).
+    1. Studenci mają prawo składać oświadczenie o zmianie okoliczności mających wpływ na przyznane prawo do stypendium socjalnego.
+        1. Oznacza to, że wartość przychodu netto na miesiąc na osobę może się zmieniać w czasie i należy to uwzględnić w algorytmie obliczania kwoty wypłaty. (patrz 2.1.1).
+
+#### Problemy rozwiązywane przez system
+
+Największym problemem Wydziałowej Komisji Stypendialnej jest liczność studentów wnoszących o stypendium. System ma usprawnić zarządzanie wnioskami oraz co miesiąc automatycznie wyliczać kwoty stypendium dla każdego studenta z osobna. Oczekuje się również, że korekta danych o rodzinnych przychodach studenta, w przypadku złożenia przez niego oświadczenia o zmianie okoliczności mających wpływ na przyznane prawo do stypendium socjalnego, będzie prosta oraz bezproblemowa.
