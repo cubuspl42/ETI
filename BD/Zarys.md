@@ -1,6 +1,6 @@
 Jakub Trzebiatowski
 
-Informatyka r.15/16 gr.6
+Informatyka r.14/15 gr.6
 
 Indeks: 155215
 
