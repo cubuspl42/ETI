@@ -1,6 +1,6 @@
 Jakub Trzebiatowski
 
-Informatyka r.14/15 gr.6
+Informatyka r.15/16 gr.6
 
 Indeks: 155215
 
@@ -30,7 +30,7 @@ Zleceniodawcą projektu jest dziekan Wydziału ETI Politechniki Gdańskiej.
 
 #### Przedmiot zlecenia
 
-Przedmiotem zlecenia jest usprawnienie działania Wydziałowej Komisji Stypendialnej. Studenci na początku roku akademickiego składają wnioski o stypendium socjalne. Próg dochódu uprawniającego do otrzymania stypendium socjalnego jest ustalony z góry (np. w roku akademickim 2014/15 próg wynosi 670 zł netto na miesiąc na osobę). Wnioski studentów, których rodzinny dochód jest większy od progu są natychmiast odrzucane. Z góry ustalona jest również minimalna i maksymalna wartość stypendium socjalnego (odpowiednio 100 zł i 700 zł w roku 2014/15). Następnie co miesiąc wyznaczana jest wartość stypendium dla każdego studenta z osobna. Studenci mają prawo składać oświadczenie o zmianie okoliczności mających wpływ na przyznane prawo do stypendium socjalnego, więc kwota która jest przyznawana konkretnemu studentowi może się zmieniać. Kwoty te są archiwizowane w bazie danych. Dodatkowo, należy uwzględnić fakt, iż osoby wykreślone z listy studentów tracą prawo do otrzymywania stypendium.
+Przedmiotem zlecenia jest usprawnienie działania Wydziałowej Komisji Stypendialnej. Studenci na początku roku akademickiego składają wnioski o stypendium socjalne. Próg dochódu uprawniającego do otrzymania stypendium socjalnego jest ustalony z góry (np. w roku akademickim 2015/16 próg wynosi 670 zł netto na miesiąc na osobę). Wnioski studentów, których rodzinny dochód jest większy od progu są natychmiast odrzucane. Z góry ustalona jest również minimalna i maksymalna wartość stypendium socjalnego (odpowiednio 100 zł i 700 zł w roku 2015/16). Następnie co miesiąc wyznaczana jest wartość stypendium dla każdego studenta z osobna. Studenci mają prawo składać oświadczenie o zmianie okoliczności mających wpływ na przyznane prawo do stypendium socjalnego, więc kwota która jest przyznawana konkretnemu studentowi może się zmieniać. Kwoty te są archiwizowane w bazie danych. Dodatkowo, należy uwzględnić fakt, iż osoby wykreślone z listy studentów tracą prawo do otrzymywania stypendium.
 
 #### Główne scenariusze
 
