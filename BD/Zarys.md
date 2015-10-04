@@ -1,7 +1,7 @@
-> Jakub Trzebiatowski
-> Informatyka r.14/15 gr.6
-> Indeks: 155215
-> 4.10.2015
+Jakub Trzebiatowski
+Informatyka r.14/15 gr.6
+Indeks: 155215
+4.10.2015
 
 # Bazy danych – projekt
 
