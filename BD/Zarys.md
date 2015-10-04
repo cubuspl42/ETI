@@ -30,7 +30,7 @@ Zleceniodawcą projektu jest dziekan Wydziału ETI Politechniki Gdańskiej.
 
 #### Przedmiot zlecenia
 
-Przedmiotem zlecenia jest usprawnienie działania Wydziałowej Komisji Stypendialnej. Studenci na początku roku akademickiego składają wnioski o stypendium socjalne. Próg dochódu uprawniającego do otrzymania stypendium socjalnego jest ustalony z góry (np. w roku akademickim 2014/15 próg wynosi 670 zł netto na miesiąc na osobę). Wnioski studentów, których rodzinny dochód jest większy od progu są natychmiast odrzucane. Z góry ustalona jest również minimalna i maksymalna wartość stypendium socjalnego (odpowiednio 100 zł i 700 zł w roku 2014/15). Następnie co miesiąc wyznaczana jest wartość stypendium dla każdego studenta z osobna. Studenci mają prawo składać oświadczenie o zmianie okoliczności mających wpływ na przyznane prawo do stypendium socjalnego, więc kwota która jest przyznawana konkretnemu studentowi może zmieniać. Kwoty te są archiwizowane w bazie danych.
+Przedmiotem zlecenia jest usprawnienie działania Wydziałowej Komisji Stypendialnej. Studenci na początku roku akademickiego składają wnioski o stypendium socjalne. Próg dochódu uprawniającego do otrzymania stypendium socjalnego jest ustalony z góry (np. w roku akademickim 2014/15 próg wynosi 670 zł netto na miesiąc na osobę). Wnioski studentów, których rodzinny dochód jest większy od progu są natychmiast odrzucane. Z góry ustalona jest również minimalna i maksymalna wartość stypendium socjalnego (odpowiednio 100 zł i 700 zł w roku 2014/15). Następnie co miesiąc wyznaczana jest wartość stypendium dla każdego studenta z osobna. Studenci mają prawo składać oświadczenie o zmianie okoliczności mających wpływ na przyznane prawo do stypendium socjalnego, więc kwota która jest przyznawana konkretnemu studentowi może się zmieniać. Kwoty te są archiwizowane w bazie danych. Dodatkowo, należy uwzględnić fakt, iż osoby wykreślone z listy studentów tracą prawo do otrzymywania stypendium.
 
 #### Główne scenariusze
 
@@ -47,6 +47,17 @@ Przedmiotem zlecenia jest usprawnienie działania Wydziałowej Komisji Stypendia
 3. Zmiana okoliczności mających wpływ na przyznane prawo do stypendium socjalnego
     1. Studenci mają prawo składać oświadczenie o zmianie okoliczności mających wpływ na przyznane prawo do stypendium socjalnego.
         1. Oznacza to, że wartość przychodu netto na miesiąc na osobę może się zmieniać w czasie i należy to uwzględnić w algorytmie obliczania kwoty wypłaty. (patrz 2.1.1).
+
+4. Utrata prawa do otrzymywania stypendium socjalnego
+4.1. Osoba, która została wykreślona z listy studentów traci prawo do otrzymywania stypendium.
+
+#### Przykładowe zapytania
+
+- Dodaj do systemu dane studenta wnoszącego o stypendium
+- Zwróć dane o miesięcznych przychodach każdego z członków rodziny studenta
+- Zwróć numer rachunku bankowego studenta, jeśli został wprowadzony
+- Uaktualnij dane o rodzinnych przychodach studenta
+- Usuń studenta z bazy
 
 #### Problemy rozwiązywane przez system
 
