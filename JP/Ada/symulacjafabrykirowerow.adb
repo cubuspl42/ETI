@@ -1,7 +1,3 @@
--- Szkielet programu do zadania z języków programowania
--- Studenci powinni przemianować zadania producentów, konsumentów i bufora
--- Powinni następnie zmienić je tak, by odpowiadały ich własnym zadaniom
--- Powinni także uzupełnić kod o brakujące konstrucje
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; 
 
