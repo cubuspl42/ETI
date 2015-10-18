@@ -39,7 +39,7 @@ Przedmiotem zlecenia jest usprawnienie działania Wydziałowej Komisji Stypendia
 
 2. Comiesięczna wypłata stypendiów
     1. Wyznaczenie kwoty stypendium dla danego studenta w danym miesiącu
-        1. Na podstawie przychodu netto na miesiąc na osobę (p), progu (P), minimalnej wartości stypendium (m) oraz maksymalnej wartości stypendium (M) określa się kwotę stypendium (K) dla danego studenta w danym miesiącu następującym wzorem: K = m + (p/P)(M - m)
+        1. Na podstawie przychodu netto na miesiąc na osobę (p), progu (P), minimalnej wartości stypendium (m) oraz maksymalnej wartości stypendium (M) określa się kwotę stypendium (K) dla danego studenta w danym miesiącu następującym wzorem: K = m + (1 - p/P)(M - m)
     2. Przekazanie pieniędzy
         1. Jeśli student posiada rachunek bankowy i podał jego numer we wniosku, stypendium przesyłane jest przelewem elektronicznym.
         2. W przeciwnym przypadku, student musi odebrać stypendium osobiście.
