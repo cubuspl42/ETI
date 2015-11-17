@@ -1,4 +1,11 @@
 build/
+[Dd]ebug/
+[Rr]elease/
+
+*.suo
+*.sdf
+*.filters
+*.user
 
 # Compiled Object files
 *.slo
