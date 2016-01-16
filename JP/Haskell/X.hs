@@ -31,14 +31,14 @@ sprawdz (K p q) wartosci = (sprawdz p wartosci) && (sprawdz q wartosci)
 sprawdz (A p q) wartosci = (sprawdz p wartosci) || (sprawdz q wartosci)
 sprawdz (C p q) wartosci = (not (sprawdz p wartosci)) || (sprawdz q wartosci)
 
-sprawdz_kompinacje :: Zdanie -> [Char] -> [(Char, Bool)] -> Bool
-sprawdz_kompinacje z [] pv = sprawdz z (fromList pv)
-sprawdz_kompinacje z (p:t) pv =
-    (sprawdz_kompinacje z t (pv ++ [(p, True)])) &&
-    (sprawdz_kompinacje z t (pv ++ [(p, False)]))  
+sprawdz_kombinacje :: Zdanie -> [Char] -> [(Char, Bool)] -> Bool
+sprawdz_kombinacje z [] pv = sprawdz z (fromList pv)
+sprawdz_kombinacje z (p:t) pv =
+    (sprawdz_kombinacje z t (pv ++ [(p, True)])) &&
+    (sprawdz_kombinacje z t (pv ++ [(p, False)]))  
 
 jest_tautologia :: Zdanie -> Bool
-jest_tautologia z = sprawdz_kompinacje z (wypisz_zmienne z) []
+jest_tautologia z = sprawdz_kombinacje z (wypisz_zmienne z) []
 
 main = do
     print (drukuj z)
