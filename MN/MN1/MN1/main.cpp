@@ -60,7 +60,7 @@ T sin1_rtl(T x, int n) {
 }
 
 template<typename T>
-T sin2_ltr(T x, int n) {
+T sin2(T x, int n) {
     T s = x;
     T y = x;
     T z = 1;
@@ -69,20 +69,6 @@ T sin2_ltr(T x, int n) {
         z *= (2 * i) * (2 * i + 1);
         // std::cout << i << ": " << y << " " << z << std::endl;
         s += y / z;
-    }
-    return s;
-}
-
-template<typename T>
-T sin2_rtl(T x, int n) {
-    T s = 0;
-    T y = sin_term_nominator(n - 1, x);
-    T z = sin_term_denominator(n - 1, x);
-    for(int i = n - 1; i >= 0; --i) {
-        // std::cout << i << ": " << y << " " << z << std::endl;
-        s += y / z;
-        y /= -x * x;
-        z /= (2 * i) * (2 * i + 1);
     }
     return s;
 }
@@ -99,8 +85,7 @@ void print_results(std::string type, T x, int n) {
     print_result("std::sin", type, x, std::sin(x));
     print_result("sin1_ltr", type, x, sin1_ltr(x, n));
     print_result("sin1_rtl", type, x, sin1_rtl(x, n));
-    print_result("sin2_ltr", type, x, sin2_ltr(x, n));
-    print_result("sin2_rtl", type, x, sin2_rtl(x, n));
+    print_result("sin2", type, x, sin2(x, n));
 }
 
 int main(int argc, const char * argv[]) {
